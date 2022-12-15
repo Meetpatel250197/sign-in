@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function hello() {
+			alert("done");
+		}
+	</script>
+	<style>
+		body
+		{
+			background-color: #344a72;
+			font-family: 'Roboto',sans-serif;
+		}
+		.sign-up
+		{
+			width: 360px;
+			height: 600px;
+			background-color: white;
+			margin: auto;
+			border-radius: 5px;
+		}
+		h1
+		{
+			text-align: center;
+			margin-top: 15px;
+		}
+		h4
+		{
+			text-align: center;
+		}
+		form
+		{
+			width: 300px;
+			padding-left: 20px;
+		}
+		form label 
+		{
+			display: flex;
+			padding-top: 15px;
+			font-size: 18px;
+		}
+		input
+		{
+			width: 100%;
+			padding: 7px;
+			border: none;
+			border: 1px solid grey;
+			outline: none;
+			border-radius: 5px;
+		}
+		input[type="button"]
+		{
+			width: 315px;
+			height: 35px;
+			margin-top: 20px;
+			border: none;
+			background-color: #49c1a2;
+			color: white;
+			font-size: 18px;
+		}
+		p 
+		{
+			text-align: center;
+			padding-top: 20px;
+			font-size: 15px;
+		}
+		.login
+		{
+			color: white;
+			margin-top: -10px;
+		}
+		.login a 
+		{
+			color: #49c1a2;
+		}
+		input[type="email"]:invalid
+			{
+				border: 3px solid red;
+			}
+		input[type="email"]:valid
+			{
+				border: 3px solid green;
+			}
+		/*@media (max-width:786px)
+		{
+			h1
+			{
+				color: blue;
+			}
+			.sign-up
+			{
+				width: 100%;
+    			margin-top: 0;
+			}
+			form
+			{
+				margin-left: 250px;
+			}
+			input
+			{
+				width: 100%;
+			}
+			@media(max-width:480px)
+			{
+				h1
+				{
+					color: red;
+				}
+				.sign-up
+				{
+					width: 121%;
+				}
+				label
+				{
+					margin-left: -150px;
+				}
+				input
+				{
+					margin-left: -150px;
+				}
+
+			}*/
+			@media (max-width:786px)
+			{
+				.login
+				{
+					width: 100%;
+				}
+			}
+			@media (max-width:480px)
+			{
+				.login
+				{
+					width: 100%;
+				}
+			}
+
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="sign-up">
+		<h1>Sign-up</h1>
+		<h4>It will hardly take a minute for sign-up</h4>
+
+		<form>
+			<label>First Name</label>
+			<input type="text" placeholder="Enter your firstname">
+
+			<label>Last Name</label>
+			<input type="text" placeholder="Enter your lastname">
+
+			<label>Email</label>
+			<input type="email" placeholder="Enter your email">
+
+			<label>Password</label>
+			<input type="password" placeholder="Enter your password">
+
+			<label>Confirm Password</label>
+			<input type="password" placeholder="Enter your password again to confirm it">
+
+			<input type="button" value="Sign Up" onclick="hello()">
+		</form>
+
+		<p>By clicking the sign up button,you agree to our<br>
+			<a href=""> terms and condition</a> and <a href="">privacy policy</a></p>
+	</div>
+	<p class="login">Already have an account? <a href="login.html">Login here</a></p>
+</body>
+</html>
